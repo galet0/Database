@@ -1,0 +1,8 @@
+SELECT c.country_name, 
+		 c.country_code,
+  CASE
+  		WHEN c.currency_code = 'EUR' THEN 'Euro'
+  		ELSE 'Not Euro'
+  		END AS 'currency'
+  FROM countries AS c
+ ORDER BY c.country_name  

@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS users (
+id bigint NOT NULL AUTO_INCREMENT,
+username varchar(30) NOT NULL,
+user_password varchar(26) NOT NULL,
+profile_picture longblob,
+last_login timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+is_deleted enum('true','false') DEFAULT NULL,
+PRIMARY KEY (id),
+UNIQUE KEY username (username)
+);
+
+INSERT INTO users(username, user_password, profile_picture, last_login, is_deleted)
+VALUES ('KOP56TYU', '123456', NULL, '2015-12-07', 'TRUE'),
+('MAJK890UITG', 'KAPRUE7654', NULL, '2016-06-07', 'TRUE'),
+('MARIIKA96', '1P2O3498O56', NULL, '2016-09-07', 'FALSE'),
+( 'IVAN40', 'IVAN566', NULL, '2016-01-29', 'TRUE'),
+('PETKAN4O96', 'PATKAN1234', NULL, '2016-08-21', 'FALSE');

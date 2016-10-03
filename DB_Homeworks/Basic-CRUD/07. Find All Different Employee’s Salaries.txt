@@ -1,0 +1,1 @@
+SELECT DISTINCT(salary) AS salary FROM employees ORDER BY salary 

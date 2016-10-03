@@ -1,0 +1,2 @@
+SELECT PEAK_NAME FROM peaks
+ORDER BY peak_name

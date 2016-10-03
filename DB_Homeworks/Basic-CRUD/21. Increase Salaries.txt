@@ -1,0 +1,6 @@
+UPDATE employees AS e, departments AS d
+   SET salary = salary * 1.12
+ WHERE e.department_id = d.department_id
+   AND d.name IN ('Engineering', 'Tool Design', 'Marketing', 'Information Services');
+   
+SELECT salary FROM employees;

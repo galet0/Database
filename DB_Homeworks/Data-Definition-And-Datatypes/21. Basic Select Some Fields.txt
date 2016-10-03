@@ -1,0 +1,6 @@
+SELECT NAME FROM TOWNS
+  ORDER BY NAME;
+SELECT NAME FROM departments 
+  ORDER BY NAME;
+SELECT first_name, last_name, job_title, salary FROM Employees 
+  ORDER BY SALARY DESC;

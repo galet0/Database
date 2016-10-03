@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS people(
+p_id int NOT NULL AUTO_INCREMENT,
+name varchar(200) NOT NULL,
+picture longblob,
+height double(5,2),
+weight double(5,2),
+gender enum('m','f') NOT NULL,
+birthday date NOT NULL,
+biography longtext,
+PRIMARY KEY (p_id)
+);
+INSERT INTO People( name,Picture,Height ,Weight ,Gender ,Birthday ,Biography)
+VALUES
+( 'Gosho',NULL,1.89,78.65,'m','1977-10-25', 'Tova e biografiyata na Goshko'),
+( 'Mariyka',NULL,1.89,78.65,'f','1982-06-15', 'Tova e biografiyata na Marika'),
+( 'Pesho',NULL,1.89,78.65,'m','1967-10-25', 'Tova e biografiyata na Pesho'),
+( 'Zdravka',NULL,1.89,78.65,'f','1982-06-15', 'Tova e biografiyata na Zdravka'),
+( 'Ivan',NULL,1.89,78.65,'m','1982-06-15', 'Tova e biografiyata na Ivan');
